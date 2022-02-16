@@ -87,6 +87,7 @@ div.caract{
     top: 50px;
     padding: 0px;
     margin-top:0px;
+    background-image:linear-gradient(45deg, black, transparent ); /* aplico gradiente de negro a transparente */
 }
 
 div.marcas{
@@ -94,6 +95,10 @@ div.marcas{
     border: solid;
     position:relative;
     top: 60px;
+}
+
+div.marcas img{
+    transform: rotate(45deg); /* aplico rotacion en las imagenes de las marcas*/
 }
 
 div.marcas h1{
