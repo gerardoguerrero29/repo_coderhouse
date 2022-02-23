@@ -28,6 +28,7 @@ body{
 
 li a:hover {
     background-color: gray;
+    color: black;
 }
 li a{
     text-decoration: none;
@@ -74,6 +75,8 @@ div.intro__texto2{
 
 .complemento__logos img{
 width: auto;
+position:relative;
+top: 70px;
 }
 .complemento__logos{
    
@@ -97,9 +100,7 @@ div.marcas{
     top: 60px;
 }
 
-div.marcas img{
-    transform: rotate(45deg); /* aplico rotacion en las imagenes de las marcas*/
-}
+
 
 div.marcas h1{
     color: green; 
@@ -166,9 +167,6 @@ div.mapouter{
 
 /* MEDIA QUERIES*/
 
-@media screen and (min-width: 426px) {
-   
-} /*para medidas mas grandes que un telefono*/
 
 @media screen and (max-width: 425px) {
     .header{
