@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+body{
+    background-color: rgb(234, 255, 234);
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav{
+    list-style-type: none;
+    font-size: 100%;
+    background-color: whitesmoke;
+    position: sticky;
+    top: 0%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+li a:hover {
+    background-color: gray;
+    color: black;
+}
+li a{
+    text-decoration: none;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 16px;
+}
+section.portada img{
+    display: inline;
+    border: solid 2px black ;
+    position: relative;
+    top: 1rem;
+    bottom: 1rem;
+}
+
+section.portada{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+section.intro{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 2rem;
+    bottom: 2rem;
+
+
+}
+div.intro__texto{
+    border: solid 2px;
+    height: auto;
+    width: 50%;
+}
+div.intro__texto2{
+    border: solid 2px;
+    height: auto;
+    width: 50%;
+}
+
+.complemento{
+    display: flex;
+    flex-direction: column;
+    
+    &__logos img{
+    width: auto;
+    position:relative;
+    top: 70px;
+    }
+
+}
+
+
+div.caract{
+    display: flex;
+    justify-content: center;
+    border: solid;
+    position:relative;
+    align-items: center;
+    top: 50px;
+    padding: 0px;
+    margin-top:0px;
+    background-image:linear-gradient(45deg, black, transparent ); /* aplico gradiente de negro a transparente */
+}
+
+div.marcas{
+    text-align: center;
+    border: solid;
+    position:relative;
+    top: 60px;
+}
+
+
+
+div.marcas h1{
+    color: green; 
+    font-style: italic ;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+div.pagos{
+    text-align: center;
+    border: solid;
+    float: left;
+    align-items: center;
+    display: block;
+    position:relative;
+    top: 140px;
+}
+div.conocenos{
+    display: flex;
+}
+
+div.conocenos h1{
+    text-align: center;
+    font-style: italic ;
+    font-weight: bold;
+}
+div.conocenos p{
+    text-align: justify;
+    font-weight: bold;
+}
+
+section#termosuelo div{
+display: inline;
+align-items: center;
+}
+section#bombaDeCalor div{
+    display: inline;
+    align-items: center;
+    }
+section#climatizacionPiscinas div{
+        display: inline;
+        align-items: center;
+        }
+section.proy1 div,.proy2 div{
+    display: inline;
+    text-align:justify;
+    width: 50vh;
+}
+div.form fieldset{
+    width: 60vh;
+    height: auto;
+    position: relative;
+   margin: auto;
+}
+h1.contacto{
+    text-align: center;
+    padding: 2rem;
+}
+
+div.mapouter{
+    position: relative;
+    margin: auto;
+}
+
+/* MEDIA QUERIES*/
+
+
+@media screen and (max-width: 425px) {
+    .header{
+        flex-direction: column;
+    }
+    .complemento__logos img{
+        width: 100%;
+        }
+    div.conocenos{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .termosuelo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .termosuelo img, .bombaDeCalor iframe, .climatizacionPiscinas img{
+    width: 100%;    
+    }
+    .bombaDeCalor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .climatizacionPiscinas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+}
