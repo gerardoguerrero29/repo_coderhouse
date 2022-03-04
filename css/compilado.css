@@ -84,10 +84,10 @@ div.marcas {
   text-align: center;
   border: solid;
   position: relative;
-  top: 60px; }
+  top: 60px;
+  color: green; }
 
-div.marcas h1 {
-  color: green;
+h1.marcas__titulo {
   font-style: italic;
   font-weight: bold;
   text-decoration: underline; }
@@ -104,14 +104,18 @@ div.pagos {
 div.conocenos {
   display: flex; }
 
-div.conocenos h1 {
+.conocenos__titulo {
   text-align: center;
   font-style: italic;
-  font-weight: bold; }
+  font-weight: bold;
+  color: green;
+  font-size: 30px; }
 
-div.conocenos p {
+.conocenos__p {
   text-align: justify;
-  font-weight: bold; }
+  font-weight: bold;
+  color: tomato;
+  font-size: 20px; }
 
 section#termosuelo div {
   display: inline;
@@ -143,6 +147,16 @@ h1.contacto {
 div.mapouter {
   position: relative;
   margin: auto; }
+
+/*probando sass*/
+.proy1 div {
+  background-color: tomato;
+  font-size: 20px; }
+
+.proy2 div {
+  color: blue;
+  font-size: 20px;
+  text-align: center; }
 
 /* MEDIA QUERIES*/
 @media screen and (max-width: 425px) {

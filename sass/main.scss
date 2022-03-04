@@ -37,7 +37,7 @@ li a{
     text-align: center;
     padding: 16px;
 }
-{
+section.portada img{
     display: inline;
     border: solid 2px black ;
     position: relative;
@@ -100,12 +100,11 @@ div.marcas{
     border: solid;
     position:relative;
     top: 60px;
+    color: green; 
 }
 
-
-
-div.marcas h1{
-    color: green; 
+h1.marcas__titulo{
+    @extend .marcas;
     font-style: italic ;
     font-weight: bold;
     text-decoration: underline;
@@ -124,14 +123,21 @@ div.conocenos{
     display: flex;
 }
 
-div.conocenos h1{
+@mixin tipoletra ($colorletra,$sizeletra){
+color: $colorletra;
+font-size: $sizeletra;
+}
+
+.conocenos__titulo{
     text-align: center;
     font-style: italic ;
     font-weight: bold;
+    @include tipoletra(green, 30px );
 }
-div.conocenos p{
+.conocenos__p{
     text-align: justify;
     font-weight: bold;
+    @include tipoletra(tomato,20px );
 }
 
 section#termosuelo div{
@@ -167,6 +173,26 @@ div.mapouter{
     margin: auto;
 }
 
+/*probando sass*/
+$mapa_estilos: (
+color: tomato,
+color2: blue,
+pos: center,
+size: 20px,
+);
+
+.proy1 div{
+    background-color: map-get($mapa_estilos, color);
+    font-size: map-get($mapa_estilos ,size);
+}
+.proy2 div{
+    color: map-get($mapa_estilos, color2);
+    font-size: map-get($mapa_estilos, size);
+    text-align: map-get($mapa_estilos, pos);
+}
+
+
+
 /* MEDIA QUERIES*/
 
 
@@ -199,5 +225,6 @@ div.mapouter{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }   
 }
-}
+
