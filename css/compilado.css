@@ -101,8 +101,13 @@ div.pagos {
   position: relative;
   top: 140px; }
 
-div.conocenos {
-  display: flex; }
+.conocenos {
+  display: flex;
+  padding: 2rem; }
+
+.conocenos img {
+  margin-right: 2rem;
+  width: 100vw; }
 
 .conocenos__titulo {
   text-align: center;
@@ -117,28 +122,32 @@ div.conocenos {
   color: tomato;
   font-size: 20px; }
 
-section#termosuelo div {
-  display: inline;
+.termosuelo {
+  display: flex;
   align-items: center; }
 
-section#bombaDeCalor div {
-  display: inline;
+.bombaDeCalor {
+  display: flex;
   align-items: center; }
 
-section#climatizacionPiscinas div {
-  display: inline;
+.climatizacionPiscinas {
+  display: flex;
   align-items: center; }
+
+.termosuelo div {
+  width: 50% vh; }
 
 section.proy1 div, .proy2 div {
   display: inline;
   text-align: justify;
   width: 50vh; }
 
-div.form fieldset {
-  width: 60vh;
+.form {
+  width: 100vw;
   height: auto;
   position: relative;
-  margin: auto; }
+  margin: auto;
+  text-align: center; }
 
 h1.contacto {
   text-align: center;
@@ -178,6 +187,10 @@ div.mapouter {
     flex-direction: column;
     align-items: center; }
   .climatizacionPiscinas {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .form div {
     display: flex;
     flex-direction: column;
     align-items: center; } }

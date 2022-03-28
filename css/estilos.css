@@ -133,7 +133,7 @@ div.conocenos p{
 }
 
 section#termosuelo div{
-display: inline;
+display: flex;
 align-items: center;
 }
 section#bombaDeCalor div{
