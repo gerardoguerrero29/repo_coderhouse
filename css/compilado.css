@@ -6,6 +6,10 @@
 body {
   background-color: #eaffea; }
 
+.footer {
+  position: relative;
+  top: 40px; }
+
 .header {
   display: flex;
   align-items: center;
@@ -19,7 +23,8 @@ body {
   top: 0%;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  z-index: 1000; }
 
 li a:hover {
   background-color: gray;
@@ -109,6 +114,12 @@ div.pagos {
   margin-right: 2rem;
   width: 100vw; }
 
+.producto__titulo {
+  font-style: italic;
+  font-weight: bold;
+  color: green;
+  font-size: 35px; }
+
 .conocenos__titulo {
   text-align: center;
   font-style: italic;
@@ -118,9 +129,7 @@ div.pagos {
 
 .conocenos__p {
   text-align: justify;
-  font-weight: bold;
-  color: tomato;
-  font-size: 20px; }
+  font-weight: bold; }
 
 .termosuelo {
   display: flex;
@@ -137,10 +146,9 @@ div.pagos {
 .termosuelo div {
   width: 50% vh; }
 
-section.proy1 div, .proy2 div {
+section.proy1 div, section.proy2 div {
   display: inline;
-  text-align: justify;
-  width: 50vh; }
+  text-align: left; }
 
 .form {
   width: 100vw;
@@ -158,12 +166,16 @@ div.mapouter {
   margin: auto; }
 
 /*probando sass*/
+.proy1, .proy2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+
 .proy1 div {
-  background-color: tomato;
   font-size: 20px; }
 
 .proy2 div {
-  color: blue;
+  color: black;
   font-size: 20px;
   text-align: center; }
 
@@ -193,4 +205,8 @@ div.mapouter {
   .form div {
     display: flex;
     flex-direction: column;
-    align-items: center; } }
+    align-items: center; }
+  section.proy1, section.proy2 {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column; } }
